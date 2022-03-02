@@ -45,6 +45,10 @@ nav ul li a {
   color: #fff;
   padding: 15px;
   text-transform: capitalize;
+  transition: alln0.4s ease;
+}
+nav ul li a:hover {
+  color: #1abc9c;
 }
 
 header {
