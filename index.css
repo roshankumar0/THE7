@@ -112,7 +112,9 @@ header {
   background: transparent;
   box-shadow: 0 0 0 2px #484f58;
   transition: all 0.15s linear;
+  cursor: pointer;
 }
+
 .card h1 {
   font-weight: 400;
   word-spacing: 2px;
@@ -137,6 +139,7 @@ header {
   border-radius: 30px;
   background-color: #1abc9c;
   transition: all 0.4s ease;
+  cursor: pointer;
 }
 .contents .card button:hover {
   background: transparent;
