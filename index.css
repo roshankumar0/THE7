@@ -12,7 +12,7 @@ body {
   z-index: 11;
   color: white;
   display: block;
-  top: 5px;
+  top: 20px;
   left: 10px;
   display: none;
   cursor: pointer;
@@ -20,6 +20,7 @@ body {
 .logo {
   color: white;
 }
+
 .logo span {
   color: red;
 }
@@ -157,8 +158,12 @@ header {
     line-height: 5px;
     transition: all 0.3s ease-in-out;
   }
+  .active {
+    color: #1abc9c;
+  }
+
   nav ul li a:hover {
-    color: #484f58;
+    color: #1abc9c;
   }
   #bars {
     display: block;
