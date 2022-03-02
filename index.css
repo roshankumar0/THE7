@@ -4,8 +4,10 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 1px;
 }
+
 #bars {
   height: 40px;
   position: fixed;
