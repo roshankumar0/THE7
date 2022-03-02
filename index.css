@@ -8,10 +8,20 @@ body {
 }
 #bars {
   height: 40px;
-  position: absolute;
+  position: fixed;
   z-index: 11;
   color: white;
+  display: block;
+  top: 5px;
+  left: 10px;
   display: none;
+  cursor: pointer;
+}
+.logo {
+  color: white;
+}
+.logo span {
+  color: red;
 }
 nav {
   display: flex;
@@ -21,6 +31,7 @@ nav {
   position: sticky;
   top: 0px;
   z-index: 10;
+  background-color: black;
 }
 nav ul {
   position: relative;
@@ -29,16 +40,12 @@ nav ul {
   list-style: none;
 }
 nav ul li a {
-  display: block;
   text-decoration: none;
   color: #fff;
   padding: 15px;
+  text-transform: capitalize;
 }
-ul #bars {
-  position: absolute;
-  top: 35%;
-  right: 0;
-}
+
 header {
   background-color: rgba(0, 0, 0, 0.822);
 }
@@ -72,48 +79,42 @@ header {
   cursor: pointer;
   margin-bottom: 50px;
 }
-.services {
-  margin: 90px;
-  width: 100%;
-  margin: 0 auto;
-}
-.services h1 {
-  font-weight: 400;
-  margin: 50px;
-  color: gray;
-}
-.our__services {
-  text-align: center;
-}
-.social {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-.social i {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  width: 100px;
-  font-size: 40px;
-  border: 2px solid gray;
-  padding: 00px;
-  border-radius: 50%;
-  margin: 0 30px;
-  margin-bottom: 50px;
-  color: gray;
-}
+
 .contents {
-  padding: 0 20px;
+  margin-top: 50px;
   display: flex;
-  flex-wrap: wrap;
+}
+.main__container h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 2.8em;
+  line-height: 0.9em;
+  text-transform: uppercase;
+  color: #484f58;
+  font-weight: 300;
 }
 .card {
   text-align: center;
-  flex-basis: 21%;
   margin: 0 20px;
+}
+.card i {
+  font-size: 2em;
+  padding: 1.1em 1.15em;
+  color: #484f58;
+  border-radius: 50%;
+  background: transparent;
+  box-shadow: 0 0 0 2px #484f58;
+  transition: all 0.15s linear;
+}
+.card h1 {
+  font-weight: 400;
+  word-spacing: 2px;
+  font-size: 20px;
+  color: #484f58;
+}
+.card p {
+  text-align: justify;
+  padding: 0 20px;
 }
 .contents .card h1 {
   margin-bottom: 40px;
@@ -129,7 +130,39 @@ header {
   border-radius: 30px;
   background-color: #1abc9c;
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 560px) {
+  .content h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .content p {
+    line-height: 30px;
+    text-align: justify;
+  }
+  .contents {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+  }
+  nav .menu {
+    display: none;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li a {
+    display: block;
+    line-height: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  nav ul li a:hover {
+    color: #484f58;
+  }
+  #bars {
+    display: block;
+  }
 }
 @media only screen and (max-width: 820px) {
 }
